@@ -10,4 +10,11 @@ public class BibleBook
 		this.numOfChapters = numofChapters;
 		this.summaryOfBook = summaryOfBook;
 	}
+	
+	public void displayBook()
+	{
+		String display = this.bookName + ": " + this.numOfChapters + " chapters" + "\n" + this.summaryOfBook;
+		System.out.println(display);
+		
+	}
 }
