@@ -17,6 +17,15 @@ public class BibleBook
 		this.summaryOfBook = summaryOfBook;
 	}
 	
+	public BibleBook(String commaDelimited)
+	{
+		String[] parts = commaDelimited.split(",");
+		this.bookName = parts[0];
+		this.numOfChapters = Integer.parseInt(parts[1]);
+		this.summaryOfBook = parts[2];
+		
+	}
+	
 	//Source and then generate... you can generate these automatically
 	public int getNumOfChapters() 
 	{
